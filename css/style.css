@@ -1,0 +1,751 @@
+/*inter font link*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/*saira font*/
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --main-bg: #1842b6;
+  --main-green: #26d48c;
+  --saira-font: Saira, sans-serif;
+  --inter-font: Inter sans-serif;
+  --main-black: black;
+  --main-text-color: grey;
+  --main-gradient: rgb(38, 212, 140);
+}
+* {            
+  padding: 0;                 
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header .container {
+  width: 100%;
+  min-height: 6vh;
+  display: flex;
+  align-items: center;
+  font-family: var(--inter-font);
+}
+
+/*top nav css*/
+.top-nav {
+  background: var(--main-black);
+}
+.top-nav i {
+  color: var(--main-green);
+  font-size: 0.9rem;
+}
+.top-nav p {
+  color: var(--main-text-color);
+  font-size: 0.9rem;
+  margin-bottom: 0rem;
+}
+.top-nav #icons span {
+  background: white;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.top-nav #icons span i {
+  color: var(--main-bg);
+  font-size: 16px;
+}
+
+#animation-prt {
+  overflow: hidden;
+}
+.top-nav #animation-prt p {
+  position: relative;
+  left: -300px;
+  color: var(--main-green);
+
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+/*nav top animation*/
+@keyframes move {
+  from {
+  }
+  to {
+    left: 110%;
+  }
+}/*top nav code end*/
+
+/*navbar code*/
+nav{
+  color: white;
+  height: 13vh;
+  background: var(--main-bg);
+  position: relative;
+  z-index: 10;
+  
+}
+
+/*nav items css*/
+nav #company-name{
+  font-size: 40px;
+  font-family: var(--saira-font);
+  font-weight: 700;
+}
+nav a span{
+  color: var(--main-green);
+}
+nav a{
+  color: white  !important;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-family: var(--inter-font);
+  margin: 0 2rem 0 0;
+  
+}
+.navbar-nav .nav-item{
+  background: var(--main-bg);
+}
+.nav-item .nav-links:hover{
+  color: var(--main-green);
+ 
+}
+nav .nav-item.active a {
+  color: var(--main-green);
+}
+
+.dropdown-menu .dropdown-item {
+  color: black !important;
+
+}
+
+
+.dropdown-item.active{
+  background-color: darkblue; /* Change this to your desired active color */
+  color: white;/* Change text color if needed */
+}
+
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+button:active{
+  border: 2px solid white ;
+}
+.nav-icons i{
+  font-size: 32px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  
+}
+.nav-icons p{
+  color: var(--main-gradient);
+  font-size: 16px;
+  width: 220px;
+  
+  
+}
+
+
+.nav-icons #search-box{
+  border-left: 1px solid white;
+  padding-left: 15px;
+
+}
+@keyframes phone-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+    scale: 1.2;
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+nav #phone-icon{
+  animation-name: phone-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 1000ms;
+}
+
+/*hero section css*/
+.hero-section {
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.carousel-item {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-item img {
+  
+   height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  z-index: 1;
+}
+
+.hero-content h4{
+  color: var(--main-green);
+  font-family: var(--saira-font);
+  font-weight: 699;
+}
+.hero-content h1{
+  color: white;
+  font-family: var(--saira-font);
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+}
+.hero-content p{
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  
+}
+.button-group {
+  display: flex;
+  gap: 19px; /* Space between buttons */
+  justify-content: center; /* Center the button group */
+  margin: 2rem 0;
+}
+
+.button-group .btn {
+  width: 180px;
+  height: 55px;
+  padding: 10px 30px;
+  border-radius: 20px; /* Rounded corners */
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.button-group .btn-primary {
+  background: var(--main-green);
+  color: var(--main-black);
+}
+
+.button-group .btn-primary:hover {
+  background: var(--main-bg);
+  color: white;
+  transition: 1s ease;
+}
+
+.button-group .btn-secondary {
+  background: var(--main-bg);
+  color: white;
+}
+
+.button-group .btn-secondary:hover {
+background: var(--main-green);
+color: var(--main-black);
+transition: 1s ease;
+}
+/* Style for the carousel indicators */
+.carousel-indicators {
+  bottom: 20px; /* Adjust position if needed */
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  margin: 20px 0 10px 0;
+}
+
+.carousel-indicators li {
+  width: 30px;
+  height: 30px;
+  background: var(--main-bg) !important; /* Semi-transparent background */
+  border-radius: 50%; /* Make the indicators circular */
+  margin: 0 7px;
+}
+
+
+
+.carousel-indicators li:hover {
+  background: var(--main-green) !important; /* Darker background on hover */
+}
+
+/* Style for the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 90px; /* Adjust width as needed */
+  height: 70px; /* Adjust height as needed */
+  position: absolute;
+  top: 50%; /* Position vertically in the middle */
+  transform: translateY(-50%);
+  background: var(--main-bg); /* Semi-transparent background */
+  border: none;
+  border-radius: 5px; /* Make controls square with rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s ease;
+  opacity: 1 !important;
+
+}
+
+.carousel-control-prev {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.carousel-control-next {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+background: var(--main-green);
+}
+
+
+
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23FFF" viewBox="0 0 8 8"%3E%3Cpath d="M5.5 0L4.78.22 2.06 3l2.72 2.78L5.5 6 3 3.5 5.5 1 5.5 0z" transform="translate(0 1)" /%3E%3C/svg%3E');
+  
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23FFF" viewBox="0 0 8 8"%3E%3Cpath d="M2.5 0L3.22.22 5.94 3 3.22 5.78 2.5 6 5 3.5 2.5 1 2.5 0z" transform="translate(0 1)" /%3E%3C/svg%3E');
+}
+.hero-section #next-slider{
+  width: 800px;
+}
+
+
+/*stastic css*/
+.stastics {
+  background: var(--main-green);
+  height: 30vh;
+  width: 100%;
+}
+.stastics .container{
+  height: 100%;
+
+}
+.stastics .counter{
+  color: var(--main-bg);
+  font-family: var(--saira-font);
+  font-size: 40px;
+  font-weight: 600;
+  margin-right: 15px;
+  }
+.stastics h5{
+  color: white;
+  font-family: var(--saira-font);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/*about us css*/
+.about-section{
+  min-height: 130vh;
+  width: 100%;
+  
+}
+.about-section #img-container{
+  position: relative; 
+  margin: 0 auto;
+
+  
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.about-section img{
+  width: 60%;
+    position:relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+
+}
+.about-section .img-1{
+  z-index: 1;
+
+}
+.about-section .img-2{
+  z-index: 2;
+  bottom: 170px;
+  left: 120px;
+}
+/* .about-section #about-content{
+    padding: 0 0 0 160px;
+  
+} */
+.about-section #about-content h6{
+  font-family: var(--saira-font);
+  color: var(--main-bg);
+  font-weight: 600;
+  font-size: 20px;
+}
+.about-section #about-content h3{
+  font-size: 40px;
+  font-family: var(--saira-font);
+  font-weight: 600;
+}
+.about-section #about-content p{
+  font-size: 16px;
+  color: grey;
+  text-align: justify;
+  font-weight: 400;
+}
+.about-section #about-content button{
+  background: var(--main-green);
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-weight: 600;
+}
+
+/*services css*/
+.services-section{
+  min-height: 200vh;
+  width: 100%;
+}
+
+.services-section h4{
+  color: var(--main-bg);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--saira-font);
+
+}
+.services-section h1{
+  font-weight: 600;
+  font-family: var(--saira-font);
+  width: 600px;
+}
+.services-section .services-card{
+  height: 400px;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; position: relative;
+ overflow: hidden;
+ margin-top: 50px;
+}
+.services-section .services-card i{
+  color: var(--main-bg);
+  font-size: 112px;
+  font-weight: 900;
+}
+.services-card h4{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--saira-font);
+  margin: 15px 0 5px 0;
+}
+.services-card p{
+  color: grey;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 50px;
+}
+.services-card button{
+  background: var(--main-green);
+  color: white;
+  padding: 15px 50px;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.background-overlay{
+  background:   var(--main-bg);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+   position: absolute;
+   top: -100%;
+   left: 0;
+   transition: 0.6s;
+}
+.services-card:hover .background-overlay{
+  top: 0;
+  z-index: 1;
+}
+.services-card:hover i{
+  color: var(--main-green);
+  z-index: 2;
+  transition: 0.7s;
+}
+.services-card:hover p{
+  color: white;
+  z-index: 2;
+}
+
+.services-card:hover button{
+  background: var(--main-green);
+  color: white;
+  z-index: 2;
+}
+.services-card:hover h4{
+  z-index: 2;
+  color: black;
+}
+
+/*project code*/
+.project-section{
+  width: 100%;
+  min-height: 170vh;
+}
+.project-section h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-bg);
+  font-family: var(--saira-font);
+}
+.project-section h1{
+  font-size: 40px;
+  font-family: var(--saira-font);
+  font-weight: 600;
+  /* padding: 0 18rem; */
+  width: 500px;
+}
+.image-div {
+  height: 280px;
+  width: 95%;
+  background-image: url(../images/project-1.jpg);
+  background-size: cover;
+  border-radius: 8px;
+  position: relative; /* Ensure the image-div is positioned relative to place other elements correctly */
+  transition: 1000ms;
+  margin-top: 50px;
+  
+}
+
+/* Style for the blue box */
+.blue-box {
+  background: var(--main-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+  position: relative; /* Ensure blue-box is correctly positioned within image-div */
+  z-index: 3; /* Ensure blue-box is above both style-boxes and image-div */
+}
+
+.blue-box h4 {
+  color: var(--main-green);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.image-div:hover .blue-box {
+  opacity: 1;
+}
+
+.style-box {
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  position: absolute; /* Make sure style-boxes are positioned absolutely within image-div */
+  transition: opacity 500ms ease-in-out;
+  z-index: -1; 
+}
+
+.style-box-green {
+  top: -15px;
+  left: -15px;
+  background: var(--main-green);
+}
+
+.style-box-blue {
+  bottom: -15px;
+  right: -15px;
+  background: var(--main-bg);
+}
+
+.image-div:hover .style-box {
+  opacity: 0;
+}
+
+/*blog section css*/
+.blog-section{
+  margin-top: 60px;
+  width: 100%;
+  min-height: 140vh;
+}
+.blog-section h4{
+  color: var(--main-bg);
+  font-weight: 600;
+  font-size: 20px;
+  font-family: var(--saira-font);
+}
+.blog-section h1{
+  font-weight: 600;
+  font-size: 40px;
+  font-family: var(--saira-font);
+}
+.blog-section .blog-cards{
+  width: 100%;
+  min-height: 500px;
+  margin-top: 40px;
+}
+.blog-cards .blog-image {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+}
+.blog-content{
+ width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-content h5{
+  font-size: 20px;
+  font-family: var(--saira-font);
+  font-weight: 600;
+  margin-top: 69px;
+}
+.blog-content p{
+  font-size: 16px;
+  color: var(--main-green);
+  font-weight: 400;
+  margin: 0 !important;
+}
+.blog-blue-box{
+  width: 100%;
+  height: 30px;
+  background: var(--main-bg);
+}
+.blog-blue-box i{
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--main-green);
+  margin: 0 !important;
+}
+.blog-section .image-content button{
+  background: var(--main-green);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 33px;
+  border-radius: 50px;
+  z-index: 2;
+  border: none;
+  
+}
+
+.blog-section .image-btn{
+  margin: 40px 0 -50px 0;
+
+}
+
+.blog-section .blue-button{
+  background: var(--main-bg);
+  color: white;
+  font-weight: 400;
+  position: absolute;
+  padding: 15px 20px;
+  text-align: center;
+  top: -26px;
+  right: 10px;
+  border-radius: 8px;
+}
+.blog-section .image-content img{
+  border-radius: 50%;
+  position: absolute;
+  bottom: -60px;
+  left: 35%;
+  border: 4px solid white;
+ 
+}
+.share-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.share-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+  transition: left 700ms ease-in-out;
+  
+}
+
+
+
+.share-btn:hover .share-icons {
+  left: 20px;
+  opacity: 1;
+
+}
+.share-btn p{
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.2s;
+}
+.share-btn:hover p{
+  opacity: 0;
+  
+}
+
+.share-icons i {
+  color: #fff;
+  text-align: center;
+  margin: 0 10px;
+  
+}
+
+/*our team css */
+.team-section{
+  width: 100%;
+  min-height: 100vh;
+  background: red;
+}
+.team-section h4{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--saira-font);
+  color: var(--main-bg);
+  border: 1px solid black;
+}
+.team-section h1{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: var(--saira-font);
+  border: 2px solid black;
+}
+.team-card{
+  height: 450px;
+  width: 100%;
+  border: 2px solid black;
+  position: relative;
+  margin-top: 60px;
+}

@@ -1,0 +1,205 @@
+/* Default styles for large screens (desktop) */
+@media (min-width:992px) {
+
+ 
+}
+/* Media query for medium screens (tablets, 768px to 991px) */
+@media (min-width: 791px) and (max-width: 991px){
+  .hero-section{
+    z-index: 1;
+
+  }
+    .hero-section .hero-content h1 {
+      font-size: 40px;
+      line-height: 3rem;
+    }
+    
+    .hero-section .hero-content h4 {
+      font-size: 24px; /* Adjust as necessary */
+    }
+  
+    .hero-section .hero-content p {
+      font-size: 16px; /* Adjust as necessary */
+      margin-top: 1rem;
+      padding: 0 35px;
+    }
+  
+    .hero-section .hero-content .button-group button {
+      font-size: 14px; /* Adjust as necessary */
+      width: 153px;
+      height: 52px;
+      font-size: 16px;
+    }
+  
+    
+    .hero-section .hero-content #second-slide-h1{
+        padding: 0 5rem;
+
+    }
+   nav{
+    z-index: 10;
+   }
+    
+
+  .nav-icons p {
+      margin-right: 2rem; /* Space between phone icon and text */
+      margin-left: 1rem; /* Space between text and search icon */
+  }
+
+  .nav-icons i {
+      margin-right: 1.25rem; /* Space between icons */
+  }
+
+  .navbar-nav .nav-item {
+      color: white; /* White text color */
+      padding-left: 1rem; /* Add left space to the links */
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      color: white; /* White text color for links */
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+  .navbar-collapse {
+      margin-top: 0; /* No top space from the dropdown */
+  }
+  .stastics{
+    min-height: 60vh;
+  }
+  .stastics h5{
+    display: flex;
+    align-items: center;
+
+  }
+    .about-section {
+      height: 260vh;
+      
+    }
+    .services-section{
+      min-height: 260vh;
+
+    }
+    
+  .services-section h1{
+    font-size: 35px;
+  }
+  .blog-section{
+    min-height: 230vh;
+  }
+    
+  }
+  
+  /* Media query for small screens (phones, less than 768px) */
+  @media (max-width: 790px) {
+    .services-section h1{
+      width: 100%;
+    }
+    
+    .hero-section{
+     height: 20vh;
+     
+    }
+    .carousel , .carousel-item ,
+     .carousel-item > div {
+      height: 100%;
+     }
+
+    .hero-section .hero-content h1 {
+      font-size: 28px;
+      line-height: 2rem;
+    
+    }
+  
+    .hero-section .hero-content h4 {
+      font-size: 20px; /* Adjust as necessary */
+    }
+  
+    .hero-section .hero-content p {
+      font-size: 14px; /* Adjust as necessary */
+      padding: 5px 35px;
+      
+    }
+    .hero-section #next-slider p{
+      padding: 5px 98px;
+    }
+  
+    .hero-section .hero-content .button-group button {
+      font-size: 16px; /* Adjust as necessary */
+      height: 45px;
+      width: 150px;
+      display: flex;
+      
+    }
+  
+    .hero-section .hero-content {
+      width: 95%; /* Adjust as necessary */
+      
+    }
+  
+    .hero-section .carousel-inner {
+      text-align: center; /* Ensure text is centered on small screens */
+      height: 100%;
+    }
+    .hero-section .hero-content #second-slide-h1{
+        padding: 0 5rem;
+    }
+    .nav-icons {
+      display: none !important; /* Hide the icons on small screens */
+  }
+
+  .navbar-nav .nav-item {
+      padding-left: 1rem; /* Add left space to the links */
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      color: white; /* White text color for links */
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+  .navbar-collapse {
+      margin-top: 0; /* No top space from the dropdown */
+  }
+  .stastics{
+    min-height: 60vh;
+  
+  }
+  .stastics .counter{
+    font-size: 31px;
+    
+  }
+  .stastics h5{
+    display: flex;
+    align-items: end;
+    
+  }
+  .about-section {
+    height: 250vh;
+    
+
+  }
+  .about-section h4{
+    font-size: 20px;
+  }
+  .services-section{
+    min-height: 500vh;
+  }
+  .services-section h1{
+    padding: 0px 0 60px 0;
+    font-size: 30px;
+    width: 100%;
+  }
+  .services-section .services-card{
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+ 
+  }
+
+  
